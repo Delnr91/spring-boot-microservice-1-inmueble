@@ -30,6 +30,7 @@ public class InmuebleController {
 
     @GetMapping
     public ResponseEntity<?> getAllInmuebles(){
+
         return ResponseEntity.ok(inmuebleService.findAllInmuebles());
     }
 

@@ -9,7 +9,7 @@ public interface InmuebleService {
 
     Inmueble saveInmueble(Inmueble inmueble);
 
-    void deleteInmuble(Long inmuebleId);
+    void deleteInmueble(Long inmuebleId);
 
     List<Inmueble> findAllInmuebles();
 }
