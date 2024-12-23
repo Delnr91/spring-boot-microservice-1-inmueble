@@ -24,6 +24,7 @@ public class InmuebleController {
 
     @DeleteMapping ("{inmuebleId}")
     public ResponseEntity<?> deleteInmueble(@PathVariable Long inmuebleId){
+        inmuebleService.deleteInmueble(inmuebleId);
         return new ResponseEntity<>(HttpStatus.OK);
 
     }
